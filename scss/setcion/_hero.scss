@@ -1,0 +1,106 @@
+.hero {
+    padding-bottom: 150px;
+    padding-top: 64px;
+    text-align: center;
+    background-color: #ffffff;
+    background-image: url(../img/flower.png);
+    background-size: 145px 274px;
+    background-repeat: no-repeat;
+    background-position: center top 64px;
+
+    @media screen and (min-width: 752px) {
+        background-size: 390px 636px;
+    }
+
+    &__box {
+        padding-top: 100px;
+
+         @media screen and (min-width: 752px) {
+             padding-top: 200px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 167px;
+        justify-content: center;
+
+        @media screen and (min-width: 752px) {
+            gap: 450px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            gap: 610px;
+        }
+    }
+
+    &__label {
+       width: 46px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+
+          @media screen and (min-width: 752px) {
+            width: 101px;
+            font-size: 24px;
+        }
+
+        @media screen and (min-width:1264px) { 
+            font-size: 32px;
+        }
+    }
+
+    &__img {
+        width: 64px;
+        height: 76px;
+
+        @media screen and (min-width: 752px) {
+            width: 145px;
+            height: 150px;
+        }
+
+        @media screen and (min-width:1264px) {
+            width: 166px;
+            height: 166px;
+        }
+    }
+
+    &__title {
+        color: #000;
+        text-align: center;
+        font-size: 52px;
+        font-weight: 400;
+        line-height: normal;
+         margin-top: 70px;
+
+        @media screen and (min-width: 752px) {
+            font-size: 120px;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 220px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 160px;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 140px;
+            // transform: translateY(155px);
+        }
+    }
+
+    // @media screen and (min-width: 304px) {
+    //     width: 304px;
+    // }
+
+    // @media screen and (min-width: 752px) {
+    //     width: 752px;
+    // }
+
+    // @media screen and (min-width: 1264px) {
+    //     width: 1264px;
+    // }
+
+}
