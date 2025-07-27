@@ -1,0 +1,92 @@
+.header {
+    border-top: 5px solid #4a4a4a;
+    background-color: #fff;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 752px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1264px) {
+        padding-top: 28px;
+        padding-bottom: 24px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: auto;
+
+        .header__icon {
+            width: 45px;
+            height: 35px;
+
+            @media screen and (min-width: 752px) {
+                width: 72px;
+                height: 57px;
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @media screen and (min-width: 752px) {
+            display: block;
+        }
+    }
+
+    &__list {
+
+        @media screen and (min-width: 752px) {
+            display: flex;
+            gap: 24px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            display: flex;
+            gap: 48px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #555;
+        }
+    }
+
+    &__tel {
+
+        margin-left: auto;
+
+
+        .header__phone {
+            width: 22px;
+            height: 22px;
+            fill: #000;
+
+            @media screen and (min-width: 752px) {
+                width: 24px;
+                height: 24px;
+              }
+            
+              @media screen and (min-width: 1264px) {
+                width: 28px;
+                height: 28px;
+              }
+            }
+        }
+    }
