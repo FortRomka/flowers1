@@ -1,0 +1,98 @@
+.footer {
+  background-color: #000;
+  padding: 40px 0;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+     @media screen and (min-width: 752px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @media screen and (min-width: 1264px) {
+      display: block;
+    }
+  }
+
+  &__icon {
+    width: 73px;
+    height: 57px;
+    fill: #fff;
+
+
+  }
+
+
+  &__title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 752px) {
+      font-size: 20px;
+    }
+
+    // @media screen and (min-width: 1264px) {
+
+    // }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+
+    @media screen and (min-width: 752px) {
+      font-size: 16px;
+
+    }
+
+    //  @media screen and (min-width: 1264px) {
+
+    // }
+  }
+
+
+  &__social {
+    display: flex;
+    gap: 14px;
+    transform: translateX(-35px);
+
+    @media screen and (min-width: 752px) {
+      flex-direction: column;
+      gap: 18px;
+       transform: translateX(0);
+    }
+
+    &-icon {
+      width: 28px;
+      height: 28px;
+      fill: #fff;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.footer__br{
+   @media screen and (min-width: 752px) {
+      display: none;
+    }
+}
