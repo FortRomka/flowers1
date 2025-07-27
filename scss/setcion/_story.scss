@@ -1,0 +1,173 @@
+.story {
+  background-color: #fdfdfd;
+
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (min-width: 752px) {
+      font-size: 32px;
+      margin-bottom: 80px;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 752px) {
+      gap: 32px;
+    }
+  }
+
+  &__item {
+    flex-basis: calc((100% - 16px) / 2);
+
+    @media screen and (min-width: 752px) {
+      flex-basis: calc((100% - 32px) / 2);
+    }
+
+  }
+
+  &__img {
+    // width: 136px;
+    height: 155px;
+
+    @media screen and (min-width: 752px) {
+      // width: 344px;
+      height: 399px;
+    }
+
+    @media screen and (min-width: 1264px) {
+      // width: 600px;
+      height: 542px;
+    }
+  }
+
+  &__text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+
+
+    @media screen and (min-width: 752px) {
+      font-size: 32px;
+      line-height: normal;
+      text-align: center;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: "";
+        width: 70px;
+        height: 1px;
+        background-color: #000;
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 1264px) {
+      font-size: 36px;
+      line-height: normal;
+      text-align: center;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: "";
+        width: 278px;
+        height: 1px;
+        background-color: #000;
+        display: block;
+      }
+    }
+
+
+  }
+
+  &__price {
+    color: darkgray;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+
+    @media screen and (min-width: 752px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1264px) {
+      font-size: 28px;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  &__button {
+    display: flex;
+    width: 208px;
+    height: 44px;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38px;
+    background: var(--pink, #E86F54);
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    /* 120% */
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    @media screen and (min-width: 752px) {
+      width: 280px;
+      height: 64px;
+      padding: 16px 32px;
+      font-size: 28px;
+    }
+  }
+
+  &__button:hover {
+    background-color: #cf5f46;
+  }
+}
+
+// @media screen and (min-width: 304px) {
+//     width: 304px;
+// }
+
+// @media screen and (min-width: 752px) {
+//     width: 752px;
+// }
+
+// @media screen and (min-width: 1264px) {
+//     width: 1264px;
+// }
