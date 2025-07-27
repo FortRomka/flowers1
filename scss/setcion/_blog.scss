@@ -1,0 +1,160 @@
+.blog {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+
+  &__box {
+    width: 100%;
+    max-width: 1264px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      display: block;
+
+
+
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 44px;
+
+  }
+
+  &__item:nth-child(1) {
+    // position: absolute;
+    // left: -100px;
+
+    .blog__img {
+      width: 122px;
+      height: 147px;
+
+      @media screen and (min-width: 768px) {
+        width: 287px;
+        height: 346px;
+      }
+
+      @media screen and (min-width: 1268px) {
+        width: 390px;
+        height: 421px;
+      }
+    }
+
+    @media screen and (min-width: 1268px) {
+      position: static;
+    }
+
+  }
+
+  &__item:nth-child(even) {
+    z-index: 1;
+
+    .blog__img {
+      width: 153px;
+      height: 181px;
+
+
+      @media screen and (min-width: 768px) {
+        width: 344px;
+        height: 398px;
+      }
+
+      @media screen and (min-width: 1268px) {
+        width: 390px;
+        height: 421px;
+      }
+    }
+
+     @media screen and (min-width: 1268px) {
+      position: static;
+    }
+
+  }
+
+  &__item:nth-child(3) {
+    // position: absolute;
+    // right: -100px;
+
+    .blog__img {
+      width: 315px;
+      height: 369px;
+
+      @media screen and (min-width: 768px) {
+        width: 287px;
+        height: 346px;
+      }
+
+      @media screen and (min-width: 1268px) {
+        position: static;
+      }
+    }
+
+    @media screen and (min-width: 1268px) {
+      position: static;
+    }
+
+  }
+
+
+
+
+
+
+  &__text {
+    color: #000;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: normal;
+
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    width: 280px;
+    height: 64px;
+    padding: 16px 32px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 38px;
+    background: var(--pink, #E86F54);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 24px;
+
+
+  }
+}
